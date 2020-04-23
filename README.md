@@ -1,4 +1,4 @@
 # invie
-Las guitarras más locas
+Guitarras invi-sibles 
 
-http://leonidasesteban.github.io/invie-responsive/
+http://manuelcama92.github.io/invie-github/
