@@ -1,43 +1,62 @@
 @font-face {
-    font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?6s6d3k');
-    src:    url('../fonts/icomoon.eot?6s6d3k#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?6s6d3k') format('truetype'),
-        url('../fonts/icomoon.woff?6s6d3k') format('woff'),
-        url('../fonts/icomoon.svg?6s6d3k#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?6s6d3k");
+  src: url("../fonts/icomoon.eot?6s6d3k#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?6s6d3k") format("truetype"),
+    url("../fonts/icomoon.woff?6s6d3k") format("woff"),
+    url("../fonts/icomoon.svg?6s6d3k#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-envelope:before {
-    content: "\e900";
+  content: "\e900";
 }
 .icon-phone:before {
-    content: "\e901";
+  content: "\e901";
 }
 .icon-menu:before {
-    content: "\e902";
+  content: "\e902";
 }
 .icon-close:before {
-    content: "\e903";
+  content: "\e903";
 }
-
-
 
 /** {
   width: tamaño;
@@ -58,10 +77,9 @@
 }*/
 
 body {
-  font-family: 'Allerta', sans-serif;
+  font-family: "Allerta", sans-serif;
   margin: 0;
 }
-
 
 table {
   width: 100%;
@@ -81,16 +99,20 @@ td {
   padding: 20px;
 }
 
-table, td, th {
+table,
+td,
+th {
   border: 1px solid #273b47;
   border-collapse: collapse;
 }
 
-input, textarea {
+input,
+textarea {
   outline: 0;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   background: lightgray;
 }
 
@@ -102,7 +124,7 @@ input:focus, textarea:focus {
 
 .background {
   background-color: #466173;
-  background-image: url('../images/background.png');
+  background-image: url("../images/background.png");
   background-size: cover;
 }
 
@@ -122,11 +144,10 @@ input:focus, textarea:focus {
   background: -webkit-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
   background: linear-gradient(to bottom,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); */
-
 }
 
 .titulo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 70px;
   margin-bottom: 0;
   margin-top: 70px;
@@ -147,19 +168,16 @@ input:focus, textarea:focus {
 }
 
 .guitarras {
-  color: #1F313C;
+  color: #1f313c;
   margin-bottom: 60px;
 }
 
 .guitarras h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 35px;
 }
 
-
-
 .portada {
-
   color: white;
   padding: 20px;
   height: 500px;
@@ -168,7 +186,6 @@ input:focus, textarea:focus {
 .portada button {
   margin-bottom: 70px;
 }
-
 
 .menu {
   font-size: 24px;
@@ -182,8 +199,8 @@ input:focus, textarea:focus {
   margin-left: 30px;
 }
 
-.menu li:before{
-  content: '∘';
+.menu li:before {
+  content: "∘";
   font-size: 50px;
   line-height: 20px;
   color: white;
@@ -199,12 +216,11 @@ input:focus, textarea:focus {
   margin-left: 0;
 }
 
-
 .guitarra {
   margin: 10px 10px 40px 10px;
   padding: 10px;
   /*overflow: hidden;*/
-  border: 1px solid #1F313C;
+  border: 1px solid #1f313c;
   border-radius: 8px;
 }
 .guitarra ol {
@@ -213,7 +229,6 @@ input:focus, textarea:focus {
 .guitarra.b {
   height: 190px;
 }
-
 
 .derecha {
   float: right;
@@ -233,13 +248,11 @@ input:focus, textarea:focus {
   margin-left: 370px;
   position: relative;
   bottom: 90px;
-
 }
 
 .header {
   position: relative;
 }
-
 
 .footer {
   background: #273b47;
@@ -267,12 +280,10 @@ input:focus, textarea:focus {
   margin: 10px 10px 10px 0;
 }
 
-
 .footer .contenedor {
   display: flex;
   justify-content: space-between;
 }
-
 
 .formulario {
   display: flex;
@@ -280,8 +291,8 @@ input:focus, textarea:focus {
   color: white;
 }
 
-
-.col1, .col2 {
+.col1,
+.col2 {
   display: flex;
   flex-direction: column;
 }
@@ -301,20 +312,19 @@ input:focus, textarea:focus {
   font-size: 12px;
 }
 
-.formulario label, .sexo, .intereses {
+.formulario label,
+.sexo,
+.intereses {
   margin-bottom: 10px;
 }
-
 
 .sexo {
   margin-top: 10px;
 }
 
-
 .tabla {
   margin: 50px 0;
 }
-
 
 .burguer-button {
   width: 40px;
@@ -380,15 +390,15 @@ input:focus, textarea:focus {
   }
   /* portada */
 
-
   /* guitarras */
   .video-demo-contenedor {
     margin-bottom: 30px;
   }
   .guitarras {
-    text-align:center;
+    text-align: center;
   }
-  .izquierda, .derecha {
+  .izquierda,
+  .derecha {
     float: none;
     position: static;
   }
@@ -409,7 +419,6 @@ input:focus, textarea:focus {
     padding: 0;
   }
   /* guitarras */
-
 }
 
 @media screen and (max-width: 767px) {
@@ -450,7 +459,6 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 650px) {
-
   .header {
     text-align: center;
   }
@@ -477,9 +485,7 @@ input:focus, textarea:focus {
     margin: 0 10px;
   }*/
   /* guitarras */
-
 }
-
 
 @media screen and (max-width: 500px) {
   /* portada */
@@ -502,7 +508,7 @@ input:focus, textarea:focus {
     position: static;
   }
   .menu {
-    background: rgba(255, 60, 88, .8);
+    background: rgba(255, 60, 88, 0.8);
     position: fixed;
     left: -100%;
     top: 0;
@@ -512,7 +518,7 @@ input:focus, textarea:focus {
     display: flex;
     width: 100%;
     align-items: center;
-    transition: .3s;
+    transition: 0.3s;
   }
   .menu.active {
     left: 0;
@@ -543,7 +549,7 @@ input:focus, textarea:focus {
   }
 
   .title {
-    font-size: 16px
+    font-size: 16px;
   }
   /* portada */
 
@@ -565,14 +571,11 @@ input:focus, textarea:focus {
     align-items: stretch;
   }
   /* footer */
-
 }
-
 
 video {
   width: 100%;
 }
-
 
 .video-responsive-contenedor {
   position: relative;
@@ -589,9 +592,8 @@ video {
   height: 100%;
 }
 
-
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .background {
-    background-image: url('../images/background2x.png');
+    background-image: url("../images/background2x.png");
   }
 }
